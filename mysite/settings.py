@@ -1,3 +1,4 @@
+
 """
 Django settings for mysite project.
 
@@ -33,6 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
 		'home',
 		'form',
+		'about_us',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

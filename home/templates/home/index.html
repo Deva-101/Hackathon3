@@ -3,10 +3,27 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    <meta charset = "utf-8" />
 		<title>Hello!</title>
+
 		<link rel="stylesheet", href="{% static 'home/styles.css' %}">
+    <style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style> 
+
 	</head>
-	<body>
-		<h1>Hello, world!</h1>
+	<body style="background-color:green;">
+    <h1>Storm Alert</h1>
+    <p style="color:purple;text-align:center;" >Providing <mark>assistance</mark> to those impacted by Storms</p>
+
+    <img src="{% static 'home/tornado.jpg'%}" alt="Tornado" width="300" style="text-align:center;">
+
+    <h4 style="text-align:center;">To access assistance complete this form</h4>
+    
+
 	</body>
 </html>
