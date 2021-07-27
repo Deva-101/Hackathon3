@@ -3,33 +3,224 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <meta charset = "utf-8" />
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hello!</title>
+		<link rel="stylesheet", href="{% static 'home/styles.css' %}">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	text-align:center;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+}
+
+div.greet {
+	text-align: center;
+  justify-content: center;
+  align-items: center;
+	background-image: url('{% static 'home/tornado.jpg'%}'); 
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+	height: 79%;
+	padding-top: 12%;
+}
+span.heading {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+span.des {
+	color: red;
+	padding-top: 17%;
+	display: block;
+  vertical-align: bottom;
+}
+
+h1{
+	font-size: 80px;
+}
+p{
+	font-size: 20px;
+}
+/* table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+} */
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+
+</style> 
+
+	</head>
+	<body>
+		<div class="greet">
+    	<span class="heading">
+				<h1>Storm Alert</h1>
+    		<p>Providing <b>assistance</b> to those impacted by Storms</p>
+			</span>
+			<span class="des">
+				<h4>To access assistance complete this form <a href="https://hackathon3.deveshaggarwal1.repl.co/form/form/">Click Here for Form</a></h4>
+    		
+			</span>
+		</div>
+		<div style="background-color: grey;">
+			<table class="center">
+				<tr>
+					<th rowspan="2"><img src="{% static 'home/sprout.png'%}" width=400px></td>
+					<th style="font-size: 80px;">About Us</td>
+				</tr>
+				<tr>
+					<td>We are a group of people who realize and work towards helping those who have been struck by natural disasters. We realize the trauma victims endure and we wish to help by giving directions to those affected on what to do in a storm situation.</td>
+				</tr>
+			</table>
+			<span style="display:inline">
+			<img src="{% static 'home/sprout.png'%}">
+			</span>
+			<span style="display:inline">
+			<h1>About Us</h1>
+			</span>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+<!-- {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hello!</title>
+		<link rel="stylesheet", href="{% static 'home/styles.css' %}">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+<style>
+	* {
+	margin: 0;
+	padding: 0;
+	/* text-align:center; */
+}
+html, body {
+  height: 100%;
+  margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+}
+
+div.greet{
+	text-align: center;
+	vertical-align: middle;
+	background-image: url('{% static 'home/tornado.jpg'%}'); 
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+	height: 100%;
+}
+
+
+
+
+
+
+</style> 
+
+	</head>
+	<body>
+		<div class="greet">
+		 <h1>Storm Alert</h1>
+    <p>Providing <mark>assistance</mark> to those impacted by Storms</p>
+
+
+    <h4>To access assistance complete this form</h4>
+    
+    <a href="https://hackathon3.deveshaggarwal1.repl.co/form/form/">Click Here for Form</a>
+		</div>
+		<div>
+			hello there
+		</div>
+	</body>
+</html> -->
+
+
+
+
+<!-- {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Hello!</title>
 
 		<link rel="stylesheet", href="{% static 'home/styles.css' %}">
     <style>
-img {
+
+* {
+	margin: 0;
+	padding: 0;
+	text-align:center;
+}
+
+/* img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 a {
-    text-align:center;
     display:block;
+		margin:auto;
 }
+
+div{
+	background-image: url('{% static 'home/tornado.jpg'%}'); 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 600px;
+}
+
+p{
+	color:purple;
+}
+
+
+
 </style> 
 
 	</head>
-	<body style="background-color:green;">
+	<body>
+		<div>
     <h1>Storm Alert</h1>
-    <p style="color:purple;text-align:center;" >Providing <mark>assistance</mark> to those impacted by Storms</p>
+    <p>Providing <mark>assistance</mark> to those impacted by Storms</p>
 
-    <img src="{% static 'home/tornado.jpg'%}" alt="Tornado" width="300" style="text-align:center;">
+    <img src="{% static 'home/tornado.jpg'%}" alt="Tornado" width="300" style="text-align:center;"> 
 
-    <h4 style="text-align:center;">To access assistance complete this form</h4>
+    <h4>To access assistance complete this form</h4>
     
-    <a href="https://hackathon3.deveshaggarwal1.repl.co/form/form/" style="margin:auto">Click Here for Form</a>
-
+    <a href="https://hackathon3.deveshaggarwal1.repl.co/form/form/">Click Here for Form</a>
+		</div>
 	</body>
-</html>
+</html> -->
